@@ -1,4 +1,5 @@
 import profile_pic from "../assets/profile_pic.jpg";
+import Title from '../Title/Title';
 import "./Profile.scss";
 
 
@@ -20,11 +21,7 @@ function Profile() {
       <div className="item-profile">
         <div className="info">
           <div className="pos_title">
-            <h3 className="profile_title">Profile
-              <div className="pos_underline">
-                <hr className="underline_title"/>
-              </div>
-            </h3>
+            <Title text="Profile" line_width="85"/>
           </div>
           <div className="all_itens">
             {moves}
