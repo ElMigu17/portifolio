@@ -1,0 +1,85 @@
+.Profile{
+  height: 100vh;
+  width:100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Profile-pic{
+  width: 70vw;
+  object-fit: cover;
+  position: relative;
+  top: 15vh;
+}
+
+.Profile-pic-pos{
+  width:50vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-profile{
+  width:50vw;
+  position: relative;
+}
+
+.content-item{
+  width: 80%;
+  font-family: "Roboto";
+  font-size: 20px;
+}
+
+.Info{
+  width: 45vw;
+  height: 99vh;
+  padding: 1vh 0vw 0vh 5vw;
+}
+
+.allItens{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto/Roboto-Light.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("Roboto/Roboto-Regular.ttf") format("TrueType");
+}
+.topic{
+  font-family: "Roboto";
+  font-weight: 800;
+}
+
+.underlineItem{
+  top: -10%;
+  width: 4vw;
+  height: 0px;
+  border-width: 0.1px;
+
+}
+
+.ProfileTitle{
+  width: 50px;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 100;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.underlineTitle{
+  position: relative;
+  top: -50%;
+  width: 4vw;
+  border-width: 0.1px;
+}
+
