@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../assets/Roboto/Roboto-Thin.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../assets/Roboto/Roboto-Light.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../assets/Roboto/Roboto-Regular.ttf") format("TrueType");
+}
+
+.profile{
+  height: 100vh;
+  width:100vw;
+  display: flex;
+  justify-content: space-between;
+  .profile-pic-pos{
+    width:50vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .profile-pic{
+      width: 70vw;
+      object-fit: cover;
+      position: relative;
+      top: 15vh;
+    }
+  }
+
+
+}
+
+
+
+
+
+.item-profile{
+  width:50vw;
+  position: relative;
+}
+
+
+.info{
+  width:45.5vw;
+  height: 95.5vh;
+  padding: 4.5vh 0vw 0vh 4.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+
+}
+
+.pos_title{
+  display: flex;
+  align-items:baseline;
+  flex: 1;
+}
+
+.profile_title{
+  font-family: "Roboto-Thin";
+  font-size: 48px;
+  font-weight: 500;
+  
+  margin: 0;
+  
+
+}
+.pos_underline{
+  display: flex;
+  justify-content: center;
+  height: 1px;
+}
+.underline_title{
+  width: 85px;
+  border-width: 0.1px;
+  margin: 0;
+  margin-top: -7px;
+  height: 0.1px;
+}
+
+
+
+
+.all_itens{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: 100;
+  flex: 10;
+}
+
+.content-item{
+  width: 90%;
+  font-family: "Roboto-Thin";
+  font-size: 26px;
+  font-weight: 100;
+  margin:0
+}
+
+.topic{
+  font-family: "Roboto-Light";
+  font-weight: 100;
+}
+
+.underlineItem{
+  top: -10%;
+  width: 4vw;
+  height: 0px;
+  border-width: 0.1px;
+
+}
+
+
+
