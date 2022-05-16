@@ -1,10 +1,27 @@
 import Title from '../Title/Title';
 import acm from '../assets/adams_creation_minimalist.png'
 import "./Contact.scss";
-
+import apiKey from '../emailkey.js';
+import emailjs from '@emailjs/browser';
+import React, { useRef } from 'react';
 
 function Contact() {
-  
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); 
+    console.log(apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
+    emailjs.init("I2rhV_tvDUEQO11ZG");
+    emailjs.sendForm(apiKey.SERVICE_ID, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
+    
+    .then((result) => {
+      alert("Message Sent, We will get back to you shortly", result.text);
+    },
+    (error) => {
+      console.log("An error occurred, Please try again", error.text);
+    });
+  };
+
   return (
     <div className="contact">   
       <div className='pos-title'>
@@ -12,12 +29,12 @@ function Contact() {
       </div>
       <div className='content'>
         
-        <form className='contact-form'>
+        <form ref={form} onSubmit={handleSubmit} className='contact-form'>
           <h4 className='contact-question'> What do you want to say? </h4>  
-          <textarea className='message' ></textarea>
+          <textarea className='message' name='message' ></textarea>
           <h4 className='contact-question'> Could I contact you back? How? </h4>
-          <input className='contact-addres'></input>
-          <input className='submit-button' type="submit" value="Send"></input>
+          <input className='contact-addres' name="contactBack"></input>
+          <input className='submit-button' type="submit" value="Send" ></input>
         </form>
 
         <div className='pos-img'>
