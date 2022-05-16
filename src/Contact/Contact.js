@@ -8,7 +8,7 @@ function Contact() {
   return (
     <div className="contact">   
       <div className='pos-title'>
-        <Title text="Let’s get in touch!" line_width="196"/>
+        <Title text="Let’s get in touch!" line_width={window.innerWidth > 600 ? 196 : 178}/>
       </div>
       <div className='content'>
         
