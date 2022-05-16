@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../assets/Roboto/Roboto-Thin.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../assets/Roboto/Roboto-Light.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../assets/Roboto/Roboto-Regular.ttf") format("TrueType");
+}
+
+.contact{
+  height: 75vh;
+  width:100vw;
+}
+
+.pos-title{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh 0;
+}
+
+.content{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  *{
+    width: 49vw;
+  }
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-question{
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto-Thin";
+  font-weight: 100;
+  font-size: 30px;
+  margin: 2% 0;
+}
+.message{
+  font-family: "Roboto-Light";
+  resize: none;
+  height: 250px;
+  width: 85%;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.contact-addres{
+  font-family: "Roboto-Light";
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 85%;
+  margin-bottom: 30px;
+}
+.submit-button{
+  font-family: "Roboto-Light";
+  font-size: 19px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  padding: 4px 10px;
+
+}
+
+
+
+
+.pos-img{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.image-border{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-height: 400px;
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding:0%;
+}
+
+.image{
+  margin: 10vh 3vw;
+  max-width: 540px;
+}
