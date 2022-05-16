@@ -21,7 +21,7 @@ function Profile() {
       <div className="item-profile">
         <div className="info">
           <div className="pos_title">
-            <Title text="Profile" line_width="85"/>
+            <Title text="Profile" line_width={window.innerWidth > 600 ? 85 : 75}/>
           </div>
           <div className="all_itens">
             {moves}
