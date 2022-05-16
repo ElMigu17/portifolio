@@ -9,7 +9,7 @@ function Profile() {
   const moves = topic.map((step, move) => {
     return(
       <p className="content-item">
-        <strong className="topic">{step}</strong> {content[move]}.
+        <b className="topic">{step}</b> {content[move]}.
       </p>
     );
   });
