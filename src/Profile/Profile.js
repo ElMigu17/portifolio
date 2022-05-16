@@ -63,7 +63,9 @@ function Profile() {
         </div>
       </div>
       <div className="pos-button" id="down_button">
-        <button  id="down-arrow" onClick={() => window.scrollTo(0,document.body.scrollHeight)} style={{opacity: 1}} ><img className="img-down-arrow" alt="down arrow" src={arrowDown} /></button>
+        <button  id="down-arrow" onClick={() => window.scrollTo(0,document.body.scrollHeight)} style={{opacity: 1}} >
+          <img className="img-down-arrow" alt="down arrow" src={arrowDown} />
+        </button>
       </div>
     </div>
   );
