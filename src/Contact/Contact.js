@@ -15,10 +15,12 @@ function Contact() {
     emailjs.sendForm(apiKey.SERVICE_ID, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
     
     .then((result) => {
-      alert("Message Sent, We will get back to you shortly", result.text);
+      alert("Message Sent");
     },
     (error) => {
-      console.log("An error occurred, Please try again", error.text);
+      alert("An error occurred, Please try again");
+      console.log(error.text);
+
     });
   };
 
