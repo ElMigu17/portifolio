@@ -74,10 +74,14 @@
   width: fit-content;
   height: fit-content;
   padding: 4px 10px;
+  cursor:pointer;
 
 }
 
-
+.submit-button:hover{
+  color: white;
+  background-color: black;
+}
 
 
 .pos-img{
@@ -119,9 +123,7 @@
     margin-top: 3vh;
     margin-bottom: 3vh;
   }
-  .image-border{
 
-  }
   .image{
     margin: 2vh 2vw;
     width: 70vw;
