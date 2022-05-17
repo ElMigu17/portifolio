@@ -75,9 +75,7 @@
   height: fit-content;
   padding: 4px 10px;
   cursor:pointer;
-
 }
-
 .submit-button:hover{
   color: white;
   background-color: black;
@@ -106,6 +104,39 @@
 .image{
   margin: 10vh 3vw;
   max-width: 540px;
+}
+
+#loading-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(122, 122, 122, 0.4);
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#image-loading{
+  width: 50px;
+  height: 50px;
+  animation-duration: 2s;
+  animation-name: loading-image;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes loading-image{
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(90deg); }
+  50% { transform: rotate(180deg); }
+  75% { transform: rotate(270deg); }
+  100% { transform: rotate(360deg); }
 }
 @media screen and (max-width: 992px){
   .content{
