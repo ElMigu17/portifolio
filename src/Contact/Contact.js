@@ -20,6 +20,11 @@ function Contact() {
       emailjs.sendForm(apiKey.SERVICE_ID, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
       .then((result) => {
         alert("Message Sent");
+        document.getElementsByTagName("textarea")[0].value = "";
+        console.log(document.getElementsByTagName("textarea")[0].value);
+        document.getElementById("contact-addres").value = "";
+        console.log(document.getElementById("contact-addres").value);
+
       },
       (error) => {
         alert("An error occurred, Please try again");
@@ -43,7 +48,7 @@ function Contact() {
           <h4 className='contact-question'> What do you want to say? </h4>  
           <textarea className='message' name='message' ></textarea>
           <h4 className='contact-question'> Could I contact you back? How? </h4>
-          <input className='contact-addres' name="contactBack"></input>
+          <input id='contact-addres' name="contactBack"></input>
           <input id='submit-email' className='submit-button' type="submit" value="Send" ></input>
           <div id='loading-div'><img id='image-loading' src={load} alt="loading animation" /></div>
         </form>
