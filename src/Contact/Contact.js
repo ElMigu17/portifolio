@@ -21,9 +21,7 @@ function Contact() {
       .then((result) => {
         alert("Message Sent");
         document.getElementsByTagName("textarea")[0].value = "";
-        console.log(document.getElementsByTagName("textarea")[0].value);
         document.getElementById("contact-addres").value = "";
-        console.log(document.getElementById("contact-addres").value);
 
       },
       (error) => {
