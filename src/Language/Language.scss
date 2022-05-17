@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../assets/Roboto/Roboto-Thin.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../assets/Roboto/Roboto-Light.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../assets/Roboto/Roboto-Regular.ttf") format("TrueType");
+}
+
+.language{
+  position:absolute;
+  top: 0px;
+  right: 0px;
+  position: fixed;
+  z-index: 100;
+
+}
+
+.languageButton{
+  border: 1px solid black;
+  border-left: 0;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  font-family: "Roboto-Light";
+  padding: 2px 5px;
+  cursor: pointer;
+}
+.languageButton:first-child{
+  border-left: 1px solid black;
+}
+#EN{
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 600px){
+
+}
+
