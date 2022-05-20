@@ -1,13 +1,25 @@
+import React from 'react';
+import { useDispatch } from 'react-redux'
+import  {changeLanguage}  from './LanguageSlice.js'
 import "./Language.scss";
 
 
 function Language() {
 
-  function changeLanguage(e){
+  const dispatch = useDispatch()
+
+  function runChange(e){
+    let selectedLanguage = e.target.id;
+
+    console.log("ggg");
+    
+    dispatch(changeLanguage( e.target.id));
+    console.log("cccccccccccccccc");
     let languageButtons = document.getElementsByClassName("languageButton");
+
     for(let i = 0; i < languageButtons.length; i++){
-      console.log(i + ": " + languageButtons[i].id + " === " + e.target.id + "->" + languageButtons[i].id === e.target.id)
-      if(languageButtons[i].id === e.target.id){
+      console.log(i + ": " + languageButtons[i].id + " === " + selectedLanguage + "->" + languageButtons[i].id === selectedLanguage)
+      if(languageButtons[i].id === selectedLanguage){
         languageButtons[i].style.backgroundColor = "black";
         languageButtons[i].style.color = "white";
       }
@@ -18,10 +30,10 @@ function Language() {
     }
   }
 
-  const disponible_languages = ["EN", "PT", "hihihi"];
+  const disponible_languages = ["EN", "PT"];
   const buttons = disponible_languages.map((step, move) => {
     return(
-      <button key={move} id={step} className="languageButton" onClick={changeLanguage}>{step}</button>
+      <button key={move} id={step} className="languageButton" onClick={runChange}>{step}</button>
     );
   });
 
