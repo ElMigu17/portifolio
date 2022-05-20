@@ -1,15 +1,26 @@
+import { useSelector } from 'react-redux';
+import  {selectLanguage}  from '../Language/LanguageSlice.js';
+
+
 import profile_pic from "../assets/profile_pic.jpg";
 import arrowDown from "../assets/small_arrow_down.svg";
 import Title from '../Title/Title';
 import "./Profile.scss";
 
 function Profile() {
-  const topic = [["Name:"], ["Nationality:"], ["Age:"], ["Programming interests:"], ["Programming experience:"], ["Academic formation:"]];
-  const content = [["Miguel Rodrigues"], ["Brazilian"], ["21"], ["Web development and algorithm construction/manipulation"], ["Web development at Comp Jr. (2019-2022) and scientific initiation in optimization (2021)"], ["Informatic technitian at CEFET-Campus V (2016-2018) and undergraduate in Computer’s Science at UFLA (2019-present)"]];
-  const moves = topic.map((step, move) => {
+  const language = useSelector(selectLanguage);
+  const title_write = {"EN": "Profile", "PT": "Perfil"};
+  const topic = {"EN": [["Name:"], ["Nationality:"], ["Age:"], ["Programming interests:"], ["Programming experience:"], ["Academic formation:"]],
+  "PT": [["Nome:"], ["Nacionalidade:"], ["Idade:"], ["Interesses em programação:"], ["Experiencia em programação:"], ["Formação academica:"]]};
+  const content = {"EN": [["Miguel Rodrigues"], ["Brazilian"], ["21"], ["Web development and algorithm construction/manipulation"], ["Web development at Comp Jr. (2019-2022) and scientific initiation in optimization (2021)"], ["Informatic technitian at CEFET-Campus V (2016-2018) and undergraduate in Computer’s Science at UFLA (2019-present)"]],
+  "PT": [["Miguel Rodrigues"], ["Brasileiro"], ["21"], ["Desenvolvimento web e construção/manipulação de algoritmos"], ["Desenvolvimento web na Comp Jr. (2019-2022) e iniciação científica em otimização (2021)"], ["Técnico em informática no CEFET-Campus V (2016-2018) e graduando em Ciência da Computação na UFLA (2019-present)"]]};
+
+
+
+  const moves = topic[language].map((step, move) => {
     return(
       <p className="content-item" key={move}>
-        <b className="topic">{step}</b> {content[move]}.
+        <b className="topic">{step}</b> {content[language][move]}.
       </p>
     );
   });
@@ -55,7 +66,7 @@ function Profile() {
       <div className="item-profile">
         <div className="info">
           <div className="pos_title">
-            <Title text="Profile" line_width={window.innerWidth > 600 ? 85 : 75}/>
+            <Title text={title_write[language]} line_width={window.innerWidth > 600 ? 85 : 75}/>
           </div>
           <div className="all_itens">
             {moves}
