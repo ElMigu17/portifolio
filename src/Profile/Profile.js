@@ -25,6 +25,8 @@ function Profile() {
     );
   });
 
+  console.log(moves)
+
   var oldScroll = 0;
   var showing = true;
 

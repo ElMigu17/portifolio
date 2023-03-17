@@ -14,7 +14,6 @@ function Language() {
     console.log("ggg");
     
     dispatch(changeLanguage( e.target.id));
-    console.log("cccccccccccccccc");
     let languageButtons = document.getElementsByClassName("languageButton");
 
     for(let i = 0; i < languageButtons.length; i++){

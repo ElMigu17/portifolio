@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../assets/Roboto/Roboto-Thin.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../assets/Roboto/Roboto-Light.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../assets/Roboto/Roboto-Regular.ttf") format("TrueType");
+}
+
+html{
+  scroll-behavior: smooth;
+  padding-bottom: 30px;
+}
+
+
+.item-profile{
+  width:50vw;
+  position: relative;
+}
+
+
+.text{
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 25vw;
+  padding: 10px;
+  height: fit-content;
+  p{
+    padding: 0;
+    margin: 0;
+  }
+  margin-top: 10px;
+}
+
+.all_texts{
+  width: 100vw;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  font-weight: 100;
+  flex: 6;
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+@keyframes arraow-down {
+  from {
+    opacity: 0;
+    bottom: 100px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+
+@media screen and (max-width: 992px){
+  .profile{
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    .profile-pic-pos{
+      width: 100vw;
+      height: 50vw;
+      .profile-pic{
+        width: 100vw;
+        margin-bottom: 20%;
+      
+      }
+    }
+    
+  }
+  .item-profile{
+    width:90vw;
+  }
+  .info{
+    width:90vw;
+    height: fit-content;  
+  }
+
+  .content-item{
+    margin-top: 2vh;
+  }
+  .info{
+    padding: 2vh 0vw 2vh 3vw;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .profile{
+    .profile-pic-pos{
+      width: 100vw;
+      height: 60vw;
+      .profile-pic{
+        width: 100vw;
+        margin-bottom: 40%;
+      
+      }
+    }
+    
+  }
+  .content-item{
+    font-size: 20px;
+  }
+}
