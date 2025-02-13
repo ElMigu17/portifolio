@@ -11,7 +11,7 @@ import React, { useRef } from 'react';
 
 function Contact() {
   const language = useSelector(selectLanguage);
-  const title = {"EN": "Let's get em touch!", "PT": "Vamos entrar em contato!"}
+  const title = {"EN": "Let's get in touch!", "PT": "Vamos entrar em contato!"}
   const question1 = {"EN": "What do you want to say?", "PT": "O que você quer dizer?"}
   const question2 = {"EN": "Could I contact you back? How?", "PT": "Posso te responder? Como?"}
   const button = {"EN": "Send", "PT": "Enviar"}
