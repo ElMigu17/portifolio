@@ -12,10 +12,19 @@ function Profile() {
   const title_write = {"EN": "Profile", "PT": "Perfil"};
   const topic = {"EN": [["Name:"], ["Nationality:"], ["Age:"], ["Programming interests:"], ["Programming experience:"], ["Academic formation:"]],
   "PT": [["Nome:"], ["Nacionalidade:"], ["Idade:"], ["Interesses em programação:"], ["Experiencia em programação:"], ["Formação academica:"]]};
-  const content = {"EN": [["Miguel Rodrigues"], ["Brazilian"], ["21"], ["Web development and algorithm construction/manipulation"], ["Web development at Comp Jr. (2019-2022) and scientific initiation in optimization (2021)"], ["Informatic technitian at CEFET-Campus V (2016-2018) and undergraduate in Computer’s Science at UFLA (2019-present)"]],
-  "PT": [["Miguel Rodrigues"], ["Brasileiro"], ["21"], ["Desenvolvimento web e construção/manipulação de algoritmos"], ["Desenvolvimento web na Comp Jr. (2019-2022) e iniciação científica em otimização (2021)"], ["Técnico em informática no CEFET-Campus V (2016-2018) e graduando em Ciência da Computação na UFLA (2019-present)"]]};
+  const content = {"EN": [["Miguel Rodrigues"], ["Brazilian"],  getAge("2001/01/17"), ["Web development and algorithm construction/manipulation"], ["Web development at Comp Jr. (2019-2022) and scientific initiation in optimization (2021)"], ["Informatic technitian at CEFET-Campus V (2016-2018) and undergraduate in Computer’s Science at UFLA (2019-2023)"]],
+  "PT": [["Miguel Rodrigues"], ["Brasileiro"], getAge("2001/01/17"), ["Desenvolvimento web e construção/manipulação de algoritmos"], ["Desenvolvimento web na Comp Jr. (2019-2022) e iniciação científica em otimização (2021)"], ["Técnico em informática no CEFET-Campus V (2016-2018) e graduando em Ciência da Computação na UFLA (2019-2023)"]]};
 
-
+  function getAge(dateString) {
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return String(age);
+  }
 
   const moves = topic[language].map((step, move) => {
     return(
