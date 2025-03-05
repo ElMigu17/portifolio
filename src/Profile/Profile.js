@@ -17,13 +17,13 @@ function Profile() {
     getAge("2001/01/17"), 
     ["Web development and algorithm construction/manipulation"], 
     ["Web development at Comp Jr. (2019-2022) and scientific initiation in optimization (2021)"], 
-    ["Informatic technitian at CEFET-Campus V (2016-2018) and undergraduate in Computer’s Science at UFLA (2019-2023)"]],
+    ["Informatic technitian at CEFET-Campus V (2016-2018) and graduated in Computer’s Science at UFLA (2019-2023)"]],
   "PT": [["Miguel Rodrigues"], 
   ["Brasileiro"], 
   getAge("2001/01/17"), 
   ["Desenvolvimento web e construção/manipulação de algoritmos"], 
   ["Desenvolvimento web na Comp Jr. (2019-2022) e iniciação científica em otimização (2021)"], 
-  ["Técnico em informática no CEFET-Campus V (2016-2018) e graduando em Ciência da Computação na UFLA (2019-2023)"]]};
+  ["Técnico em informática no CEFET-Campus V (2016-2018) e graduado em Ciência da Computação na UFLA (2019-2023)"]]};
 
   function getAge(dateString) {
     var today = new Date();
