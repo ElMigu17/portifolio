@@ -24,7 +24,6 @@ function Contact() {
       let element = document.getElementById("loading-div");
       element.style.display = "flex";
       e.preventDefault(); 
-      console.log(apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
       emailjs.init("I2rhV_tvDUEQO11ZG");
       emailjs.sendForm(apiKey.SERVICE_ID, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
       .then((result) => {
@@ -35,7 +34,6 @@ function Contact() {
       },
       (error) => {
         alert("An error occurred, Please try again");
-        console.log(error.text);
       })
       .finally(() => {
         element.style.display = "none";

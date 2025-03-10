@@ -44,8 +44,6 @@ function Profile() {
     );
   });
 
-  console.log(moves)
-
   var oldScroll = 0;
   var showing = true;
 
@@ -75,7 +73,7 @@ function Profile() {
       fadeButton();
       showing = false;
     }
-    console.log(oldScroll < this.scrollY);
+
   }
   
 

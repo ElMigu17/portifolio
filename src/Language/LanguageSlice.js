@@ -10,7 +10,6 @@ export const languageSlice = createSlice({
       state.value = "EN"
     },
     changeLanguage: (state, action) => {
-      console.log("aaaaaaaaaaaa", action);
       state.value = action.payload;
     },
   },

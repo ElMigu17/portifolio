@@ -10,14 +10,11 @@ function Language() {
 
   function runChange(e){
     let selectedLanguage = e.target.id;
-
-    console.log("ggg");
     
     dispatch(changeLanguage( e.target.id));
     let languageButtons = document.getElementsByClassName("languageButton");
 
     for(let i = 0; i < languageButtons.length; i++){
-      console.log(i + ": " + languageButtons[i].id + " === " + selectedLanguage + "->" + languageButtons[i].id === selectedLanguage)
       if(languageButtons[i].id === selectedLanguage){
         languageButtons[i].style.backgroundColor = "black";
         languageButtons[i].style.color = "white";
