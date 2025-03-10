@@ -62,7 +62,7 @@ function Contact() {
 
         <div className='pos-img'>
           <div className='image-border'>
-            <img className='image' src={acm} alt="The Adam's creation with stick figure "/>
+            <img className='image' src={acm} alt="A representation of the frame 'The Adam's Creation', but with stick figure "/>
           </div>
         </div>
 

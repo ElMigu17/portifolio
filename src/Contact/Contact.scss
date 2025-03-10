@@ -13,11 +13,11 @@
 
 .contact{
   height: 75vh;
-  width:100vw;
+  width: 100%;
 }
 
 .pos-title{
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,6 @@
 }
 
 .content{
-  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -83,7 +82,6 @@
 
 
 .pos-img{
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,7 +110,7 @@
   left: 0;
   position: fixed;
   background-color: rgba(122, 122, 122, 0.4);
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   
   display: flex;

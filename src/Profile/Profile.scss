@@ -17,7 +17,7 @@ html{
 
 .profile{
   height: 100vh;
-  width:100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   .profile-pic-pos{
@@ -92,7 +92,7 @@ html{
   justify-content: center;
   bottom: 4vh;
 
-  width: 100vw;
+  width: 100%;
   position: fixed;
 }
 
@@ -147,13 +147,13 @@ html{
   .profile{
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     .profile-pic-pos{
-      width: 100vw;
+      width: 100%;
       height: 50vw;
       .profile-pic{
-        width: 100vw;
+        width: 100%;
         margin-bottom: 20%;
       
       }
@@ -179,10 +179,10 @@ html{
 @media screen and (max-width: 600px){
   .profile{
     .profile-pic-pos{
-      width: 100vw;
+      width: 100%;
       height: 60vw;
       .profile-pic{
-        width: 100vw;
+        width: 100%;
         margin-bottom: 40%;
       
       }
